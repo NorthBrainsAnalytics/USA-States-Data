@@ -18,7 +18,7 @@ from libraries.table_load import GetRegionalData
 ```
 the last one is <b>builded by us</b> python's class which load chosen table name and line code from BEA's serveres for Regional frame.
 
-<a herf="https://apps.bea.gov/API/signup/index.cfm">BEA's API info hub</a>
+<a href="https://apps.bea.gov/API/signup/index.cfm">BEA's API info hub</a>
 
 <br>
 
