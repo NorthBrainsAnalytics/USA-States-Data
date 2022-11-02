@@ -9,7 +9,7 @@ class GetRegionalData:
         self.params_x = {'USERID': '64C1A606-C86B-4702-A5D0-977F79A936D1',
                   'METHOD': 'GETDATA',
                   'DATASETNAME': 'REGIONAL',
-                  'YEAR': 'LAST10',
+                  'YEAR': 'ALL',    #specific year, LAST5 or LAST10
                   'TABLENAME': '',
                   'GEOFIPS': 'STATE',
                   'LINECODE': 1,
@@ -35,5 +35,5 @@ class GetRegionalData:
         return pd.DataFrame(get)
 
 
-# x = GetRegionalData()
-# data = x.bea_frame_return(line_code=10, table_name='SAEMP25N')
+#x = GetRegionalData()
+#data = x.bea_frame_return(line_code=10, table_name='SAEMP25N')
