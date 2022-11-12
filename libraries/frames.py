@@ -1,14 +1,14 @@
 import pandas as pd
 
 inflation_rate = pd.read_excel(
-    "/Users/oskarmierkiewicz/Documents/USA-States-Data/data/expected_change_in_infaltion_rates.xlsx").rename \
+    "~/Documents/USA-States-Data/libraries/data/expected_change_in_infaltion_rates.xlsx").rename \
     (columns={'DATE OF SURVEY': 'month_of_survey',
               'Unnamed: 1': 'year',
               'NEXT YEAR': 'next_year',
               'NEXT 5 YEARS': 'next_5_years'}, inplace=False)
 
 consumer_index = pd.read_excel(
-    "/Users/oskarmierkiewicz/Documents/USA-States-Data/data/consumer_sentiment_index.xlsx").rename \
+    "~/Documents/USA-States-Data/libraries/data/consumer_sentiment_index.xlsx").rename \
     (columns={'DATE OF SURVEY': 'month_of_survey',
               'Unnamed: 1': 'year',
               'INDEX OF CONSUMER SENTIMENT': 'consumer_sentiment_index'},
